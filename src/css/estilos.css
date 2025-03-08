@@ -1,0 +1,109 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    background: url(/src/images/bg-desktop.svg) hsl(257, 40%, 49%) no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans';
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 120px;
+    margin-bottom: 50px;
+}
+
+header .logo {
+    width: 15%;
+    margin-top: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+main .informacoes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+main .informacoes h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+main .informacoes p {
+    color: #fff;
+    padding: 40px 0;
+    font-size: 30px;
+}
+
+main .informacoes button {
+    cursor: pointer;
+    border-radius: 50px;
+    border: #fff;
+    width: 200px;
+    padding: 15px;
+    color: hsl(257, 40%, 49%);
+    font-size: 20px;
+    box-shadow: 0px 4px 30px -3px black;
+
+}
+
+main .informacoes button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1% 10% 0 0;
+}
+
+footer .social {
+    display: flex;
+    gap: 20px;
+}
+
+footer .social a {
+    width: 50px;
+    /* Largura do círculo */
+    height: 50px;
+    /* Altura do círculo (igual à largura para ficar redondo) */
+    display: flex;
+    justify-content: center;
+    /* Alinhamento horizontal */
+    align-items: center;
+    /* Alinhamento vertical */
+    border: 2px solid white;
+    /* Borda branca */
+    border-radius: 50%;
+    /* Deixa o ícone redondo */
+    color: white;
+    /* Cor do ícone */
+    font-size: 20px;
+    /* Tamanho do ícone */
+    transition: 0.3s ease;
+    /* Animação suave */
+}
+
+footer .social a:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+    opacity: 0.8;
+    /* Transparência leve no hover */
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+}
